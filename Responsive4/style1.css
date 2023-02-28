@@ -1,15 +1,24 @@
 body{
     margin: 0;
     font-family: 'ubuntu' ;
+    font-size: 1.125rem;
+    font-weight: 300;
 }
-h1{
+h1,
+h2,
+h3,
+.article-title{
     font-family: 'Lara', serif;
     font-weight: 400;
-    color: #143774;
+    color:#143774
+
+}
+h1{
     font-size: 2rem;
     white-space: nowrap;
     margin: 0;
 }
+/* h1 Subtitle */
 .subtitle{
     font-weight: 700;
     color: #1792d2;
@@ -17,6 +26,7 @@ h1{
     margin: 0;
 
 }
+
 header{
     text-align: center;
     background: #f8f8f8;
@@ -49,6 +59,19 @@ nav a:hover,
 nav a:focus{
     color: #1792d2;
 }
+
+.article-title{
+    font-size: 1.5rem;
+}
+.article-read-more
+.article-info{
+    font-size: .875rem;
+}
+.article-read-more{
+    color:#1792d2;
+    font-weight: 700;
+    text-decoration: none;
+}
 .current-page{
     border-bottom: 1px solid #707070; 
        
@@ -63,9 +86,6 @@ nav a:focus{
 .article-info{
     font-size: 0.9rem;
     color: #707070
-}
-.article-title{
-    color:#143774
 }
 .article-body{
     color:#707070;
@@ -86,11 +106,6 @@ nav a:focus{
 .high{
     color:#1792d2;
     text-decoration: underline;
-}
-.article-read-more{
-    color:#1792d2;
-    font-weight: 700;
-    text-decoration: none;
 }
 .article-recent{
     display:flex;
