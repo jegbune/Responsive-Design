@@ -4,6 +4,11 @@ body{
     font-size: 1.125rem;
     font-weight: 300;
 }
+img{
+    max-width: 100%;
+    display: block;
+
+}
 h1,
 h2,
 h3,
@@ -27,25 +32,6 @@ h1{
 
 }
 
-header{
-    text-align: center;
-    background: #f8f8f8;
-    padding: 2em 0; 
-    margin-bottom: 30px;
-}
-.container{
-    width: 90%;
-    max-width: 900px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-nav ul{
-    list-style:none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
 nav li{
     margin: 0 1em;
     white-space: nowrap;
@@ -60,6 +46,12 @@ nav a:focus{
     color: #1792d2;
 }
 
+/* main{
+    width: 75%;
+}
+aside{
+    width: 20%;
+} */
 .article-title{
     font-size: 1.5rem;
 }
@@ -72,6 +64,11 @@ nav a:focus{
     font-weight: 700;
     text-decoration: none;
 }
+.article-read-more:hover,
+.article-read-more:focus{
+    color:#143774;
+    text-decoration: underline;
+}
 .current-page{
     border-bottom: 1px solid #707070; 
        
@@ -79,9 +76,8 @@ nav a:focus{
 .current-page:hover{
     color: #707070;
 }
-.article-image{
-    width: 714px;
-    height: 308px;
+.article-image,.article-recent-image,.widget-image{
+    width: 100%;
 }
 .article-info{
     font-size: 0.9rem;
@@ -95,12 +91,7 @@ nav a:focus{
 .article-recent{
     margin-top: 30px;
 }
-.article-recent-image{
-    width: 198px;
-    height: 242px;
-}
-.strong{
-    font-size: 18px;
+strong{
     font-weight: 700;
 }
 .high{
@@ -118,20 +109,41 @@ nav a:focus{
 
 
 
-@media(max-width: 675px){
-       .container{
-        display: flex;
-        flex-direction: column;
-    }
-    h1{
-        white-space: pre-wrap;
-    }
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-@media(max-width: 300px){
-    h1{
-        white-space: pre-wrap;
+
+/* LAYOUT */
+    header{
+        text-align: center;
+        background: #f8f8f8;
+        padding: 2em 0; 
+        margin-bottom: 30px;
+        text-align: center;
+
     }
+    .container{
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .container-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-flex{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+/* @media (max-width:400px){
+
     nav ul{
         flex-direction: column;
     }
-}
+} */
