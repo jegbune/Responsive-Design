@@ -41,12 +41,6 @@ nav a:focus{
     color: #1792d2;
 }
 
-                                                        main{
-    width: 75%;
-}
-aside{
-    width: 20%;
-} 
 .article-title{
     font-size: 1.5rem;
 }
@@ -91,7 +85,7 @@ strong{
     text-decoration: underline;
 }
 .article-recent-main{
-    margin-left: 20px;
+    max-width: 100%;
 }
 
 
@@ -118,8 +112,15 @@ header{
     .container-flex{
         flex-direction: column;
     }
+
 }
 
+main{
+    width: 75%;
+}
+aside{
+    width: 20%;
+} 
     /* navigation */
 
     nav ul{
@@ -130,7 +131,7 @@ header{
     }
     /* @media (max-width:400px){
 
-    nav ul{
-        flex-direction: column;
+        nav ul{
+            flex-direction: column;
     }
 } */
